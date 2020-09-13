@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: bash -c "python3 dprojx/manage.py makemigrations && python3 dprojx/manage.py migrate && python3 dprojx/manage.py runserver 0.0.0.0:8000"
+    container_name: app_ayomi
+    volumes:
+      - .:/app_ayomi
+    ports:
+      - "8000:8000"

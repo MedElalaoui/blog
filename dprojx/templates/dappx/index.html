@@ -1,0 +1,25 @@
+{% extends "dappx/base.html" %}
+{% block body_block %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to Ayomi !</h1>
+    {% if user.is_authenticated %}
+        <h2>Hello! please find below your credentials:</h2>
+        <div class="infos">
+        	<div class="username"> 
+        		Username: {{ user.username }}
+        	<div/>
+        	<div class="email"> 
+        		Email address: {{ user.email }}
+        	<div/>
+        	
+        	<a class="modif" href="{% url 'dappx:modify' %}">Modify</a>
+        </div>
+    {% else %}
+        <h2>Please Register or Login</h2>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}

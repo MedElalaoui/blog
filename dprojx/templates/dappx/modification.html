@@ -1,0 +1,20 @@
+{% extends 'dappx/base.html' %}
+{% block body_block %}
+    <div class="container">
+      <div class="jumbotron">
+
+        <div class="Hi">
+          <h1>Credentials:</h1>
+        </div>
+        <form method="post" action="{% url 'dappx:user_login' %}">
+          {% csrf_token %}
+          <label for="username">Username: {{ user.username }}</label>
+          <br><label for="email">Email address: {{ user.email }}</label>
+          
+          <br><input type="email" name="new" placeholder="Type your new email">
+          
+          <br><br><input type="submit" name="" value="Modify email address">
+        </form>
+      </div>
+    </div>
+{% endblock %}
