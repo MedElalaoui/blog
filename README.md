@@ -13,8 +13,8 @@ Please follow these steps in order to launch the application:
 
 
 The application provides thhe following features:
-- Access to te Home page by clicking at Ayomi's icon or Home in te navigation bar.
-- Access to Django administration by creating a super user as following:
+1 Access to te Home page by clicking at Ayomi's icon or Home in te navigation bar.
+2 Access to Django administration by creating a super user as following:
        * launch the command "python manage.py createsuperuser" or "python3 manage.py createsuperuser"
        * Enter your desired username, email and password
 - After logging in to Django administration, it would be possible to review all te created users, reset their passwords and create groups.
