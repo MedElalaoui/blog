@@ -7,7 +7,7 @@ Please follow these steps in order to launch the application:
 - Download the repository or clone it in your local machine.
 - Activate the virtual environment denvx: "source denvx/bin/activate"
 - Build and run the container with the command: "docker-compose up"
-  - In case you receive issues regarding django or Pillow not being installed in your machine, please launch "docker-compose build" before
+  - In case you receive issues regarding django or Pillow not being installed in your machine, please launch "docker-compose build", and then "docker-compose up"
 - Please make sure that the container app_ayomi is running in Docker
 - Access to the application at http://127.0.0.1:8000/
 
@@ -15,7 +15,7 @@ Please follow these steps in order to launch the application:
 The application provides thhe following features:
 - Access to te Home page by clicking at Ayomi's icon or Home in te navigation bar.
 - Access to Django administration by creating a super user as following:
-  - launch the command "python manage.py createsuperuser" or "python3 manage.py createsuperuser"
+  - Launch the command "python manage.py createsuperuser" or "python3 manage.py createsuperuser"
   - Enter your desired username, email and password
 - After logging in to Django administration, it would be possible to review all te created users, reset their passwords and create groups.
 - Access to the Registration page, and then register using the username, the email and password, the portfolio website and the profile picture.
